@@ -54,7 +54,7 @@ def main():
             current_scrolls +=1
             
 
-        #save the scraped data(dataframe to csv)
+        #save the scraped data(dataframe to excel)
         df = pd.DataFrame(hotels_list)
         df.to_excel('hotels_price_dist.xlsx', index=False) 
         browser.close()
